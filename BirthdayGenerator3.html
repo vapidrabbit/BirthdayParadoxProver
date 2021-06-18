@@ -6,8 +6,9 @@
 <script>
 //So far this code only shows a list of 23 numbers, and you'll have to do ctrl+f and copy and paste each number to see if it's on the page. You can keep refreshing to see if you can get a match on the page.
 //The numbers go from 1-365 to represent days in a year.
+//If you copy and paste the number, include the comma. For example if the number is "20" then finding "20" on the page could have a match with "205" or "207" and so forth. "20," would not match with "205" or "207".
 let numbersArray = [] , max = 23;
-for( var i; numbersArray.push(i=Math.floor(Math.random() * 365) + 1 + "<p>") < max;);
+for( var i; numbersArray.push(i=Math.floor(Math.random() * 365) + 1 + "," + "<p>") < max;);
 document.write(numbersArray.join(''));
 </script>
 </body>
