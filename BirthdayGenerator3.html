@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Birthday Paradox Test</h2>
+<p>The Birthday Paradox states that there is at least a 50% chance that in a group of 23 people there will be 2 people with the same birthday. So let's test it.</p>
+<script>
+//So far this code only shows a list of 23 numbers, and you'll have to do ctrl+f and copy and paste each number to see if it's on the page. You can keep refreshing to see if you can get a match on the page.
+//The numbers go from 1-365 to represent days in a year.
+let numbersArray = [] , max = 23;
+for( var i; numbersArray.push(i=Math.floor(Math.random() * 365) + 1 + "<p>") < max;);
+document.write(numbersArray.join(''));
+</script>
+</body>
+</html>
